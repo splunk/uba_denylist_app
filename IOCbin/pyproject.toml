@@ -5,8 +5,9 @@ description = "IOC bin is a web server which accepts IOC from Splunk and let's o
 authors = ["FDSE <fdse@splunk.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 Flask = "^2.0.3"
+Flask-AutoIndex = "^0.6.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
