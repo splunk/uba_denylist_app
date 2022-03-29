@@ -1,5 +1,5 @@
 import argparse
-from app import IOCbinServer
+from iocbin.app import IOCbinServer
 
 def main():
     parser = argparse.ArgumentParser()
