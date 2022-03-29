@@ -8,29 +8,36 @@ This repo hosts solution that sends list of IOCs (IP, Domain) from Splunk to UBA
 
 ## Install (first time)
 
-> pip install poetry
+```
+pip install poetry
 
-> cd IOCbin
+cd IOCbin
 
-> poetry install
+poetry install
+```
 
 ## Run
 
-> cd IOCbin
+```
+cd IOCbin
 
-> poetry run iocbin
+poetry run iocbin
+```
 
 ## Run at specific port
 
-> poetry run iocbin -p <PORT_NUM>
+```
+poetry run iocbin -p <PORT_NUM>
+```
 
 
 ## Run in docker
+```
+cd IOCbin
 
-> cd IOCbin
+docker build . -t iocbin-server
 
-> docker build . -t iocbin-server
-
-> docker run -p 5000:5000 iocbin-server
+docker run -p 5000:5000 iocbin-server
+```
 
 
