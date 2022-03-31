@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  iocbin-server:
+    image : ghcr.io/lingy1028/iocbin-server:latest
+    ports : 
+      - "7070:7070"
+    shm_size: '2gb'
+    stdin_open: true
+    tty: true
