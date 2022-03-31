@@ -21,5 +21,5 @@ COPY pyproject.toml poetry.lock ./
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev --no-interaction --no-ansi
 
-# ENTRYPOINT [ "/work/entrypoint.sh" ]
 ENTRYPOINT [ "poetry", "run", "iocbin"]
+EXPOSE 5000
