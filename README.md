@@ -6,6 +6,20 @@ This repo hosts solution that sends list of IOCs (IP, Domain) from Splunk to UBA
 
 # IOCbin Web Server
 
+# Deploy Web Server(Production)
+
+```
+git clone https://github.com/splunk/uba_denylist_app.git
+
+cd uba_denylist_app
+
+docker-compose up
+```
+
+---
+
+# For developer
+
 ## Install (first time)
 
 ```
